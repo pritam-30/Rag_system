@@ -209,9 +209,6 @@ def run_agent(user_message: str, state: ConversationState):
                 tool_name = fc.name
                 args = dict(fc.args)
 
-                # print(f"\nCalling Tool : {tool_name}")
-                # print(f"Arguments    : {args}")
-
                 tool = TOOLS.get(tool_name)
 
                 # An unknown tool name means the model called something
@@ -236,10 +233,6 @@ def run_agent(user_message: str, state: ConversationState):
 
                 except Exception as e:
                     result = {"success": False, "error": str(e)}
-                    # print(f"\nTool Error: {e}")
-
-                # print("\nTool Result:")
-                # print(result)
 
                 response_parts.append(
                     types.Part.from_function_response(
