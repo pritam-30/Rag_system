@@ -21,36 +21,6 @@ The code is structured as a research / prototype pipeline rather than a producti
 - Evaluates retrieval quality and generation behavior with DeepEval
 - Measures retrieval latency, RAG-pipeline latency, LLM time-to-first-streamed-chunk (TTFT), and generation latency
 
----
-
-## Current architecture
-
-```text
-User question
-     │
-     ▼
-app.py / planner loop
-     │
-     ├── retrieve_documents tool
-     │       │
-     │       ▼
-     │   src/retriever.py
-     │       │
-     │       ├── rewrite_query() -> src/query_rewriter.py
-     │       ├── similarity_search() / mmr_search() / hybrid_search()
-     │       └── rerank_documents() -> src/reranker.py
-     │
-     ▼
-src/generator.py
-     │
-     ▼
-Grounded answer from Gemini using retrieved context
-```
-
-The active agent loop in `app.py` is a simple planner pattern. In the current codebase, the only tool exposed to the model is `retrieve_documents`.
-
----
-
 ## Retrieval pipeline
 
 The retrieval layer is implemented in `src/retrieval_strategies.py` and `src/retriever.py`.

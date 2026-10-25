@@ -7,6 +7,7 @@ __pycache__/
 
 # Virtual environment — large, platform-specific, fully reproducible from requirements.txt
 rag_env/
+.venv/
 
 # Vector database — regenerate via buildDB.py, don't version binary DB files
 chroma_db/
