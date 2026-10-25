@@ -1,0 +1,216 @@
+[
+  {
+    "id": 1,
+    "query": "What are the main situations where machine learning is preferable to a traditional rule-based approach?",
+    "ideal_context": [
+      {
+        "chunk_index": 4,
+        "chunk": "Another area where machine learning shines is for problems that either are too complex for traditional approaches or have no known algorithm. For example, consider speech recognition. Say you want to start simple and write a program capable of distinguishing the words “one” and “two”. You might notice that the word “two” starts with a high-pitch sound (“T”), so you could hardcode an algorithm that measures high-pitch sound intensity and use that to distinguish ones and twos—but obviously this technique will not scale to thousands of words spoken by millions of very different people in noisy environments and in dozens of languages. The best solution (at least today) is to write an algorithm that learns by itself, given many example recordings for each word."
+      },
+      {
+        "chunk_index": 5,
+        "chunk": "To summarize, machine learning is great for: Problems for which existing solutions require a lot of fine-tuning or long lists of rules (a machine learning model can often simplify code and perform better than the traditional approach); Complex problems for which using a traditional approach yields no good solution (the best machine learning techniques can perhaps find a solution); Fluctuating environments (a machine learning system can easily be retrained on new data, always keeping it up to date); Getting insights about complex problems and large amounts of data."
+      }
+    ],
+    "chunk_indices": [4, 5]
+  },
+
+  {
+    "id": 2,
+    "query": "Why can machine learning be useful when dealing with a fluctuating environment?",
+    "ideal_context": [
+      {
+        "chunk_index": 5,
+        "chunk": "To summarize, machine learning is great for: Problems for which existing solutions require a lot of fine-tuning or long lists of rules (a machine learning model can often simplify code and perform better than the traditional approach); Complex problems for which using a traditional approach yields no good solution (the best machine learning techniques can perhaps find a solution); Fluctuating environments (a machine learning system can easily be retrained on new data, always keeping it up to date); Getting insights about complex problems and large amounts of data."
+      },
+      {
+        "chunk_index": 19,
+        "chunk": "In batch learning, the system is incapable of learning incrementally: it must be trained using all the available data. This will generally take a lot of time and computing resources, so it is typically done offline. First the system is trained, and then it is launched into production and runs without learning anymore; it just applies what it has learned. Unfortunately, a model’s performance tends to decay slowly over time, simply because the world continues to evolve while the model remains unchanged. This phenomenon is often called model rot or data drift. The solution is to regularly retrain the model on up-to-date data."
+      }
+    ],
+    "chunk_indices": [5, 19]
+  },
+
+  {
+    "id": 3,
+    "query": "What is the difference between instance-based learning and model-based learning?",
+    "ideal_context": [
+      {
+        "chunk_index": 23,
+        "chunk": "This is called instance-based learning: the system learns the examples by heart, then generalizes to new cases by using a similarity measure to compare them to the learned examples (or a subset of them)."
+      },
+      {
+        "chunk_index": 24,
+        "chunk": "Model-based learning and a typical machine learning workflow. Another way to generalize from a set of examples is to build a model of these examples and then use that model to make predictions. This is called model-based learning."
+      }
+    ],
+    "chunk_indices": [23, 24]
+  },
+
+  {
+    "id": 4,
+    "query": "Why is representative training data important for machine learning models?",
+    "ideal_context": [
+      {
+        "chunk_index": 29,
+        "chunk": "In order to generalize well, it is crucial that your training data be representative of the new cases you want to generalize to. This is true whether you use instance-based learning or model-based learning."
+      },
+      {
+        "chunk_index": 30,
+        "chunk": "It is crucial to use a training set that is representative of the cases you want to generalize to. This is often harder than it sounds: if the sample is too small, you will have sampling noise (i.e., nonrepresentative data as a result of chance), but even very large samples can be nonrepresentative if the sampling method is flawed. This is called sampling bias."
+      }
+    ],
+    "chunk_indices": [29, 30]
+  },
+
+  {
+    "id": 5,
+    "query": "What problems can poor-quality training data cause, and how can it be addressed?",
+    "ideal_context": [
+      {
+        "chunk_index": 32,
+        "chunk": "Obviously, if your training data is full of errors, outliers, and noise (e.g., due to poor-quality measurements), it will make it harder for the system to detect the underlying patterns, so your system is less likely to perform well. It is often well worth the effort to spend time cleaning up your training data. The truth is, most data scientists spend a significant part of their time doing just that. If some instances are clearly outliers, it may help to simply discard them or try to fix the errors manually. If some instances are missing a few features, you must decide whether you want to ignore this attribute altogether, ignore these instances, fill in the missing values, or train one model with the feature and one model without it."
+      }
+    ],
+    "chunk_indices": [32]
+  },
+
+  {
+    "id": 6,
+    "query": "What is overfitting, and why can complex models overfit noisy or small datasets?",
+    "ideal_context": [
+      {
+        "chunk_index": 33,
+        "chunk": "Overfitting means that the model performs well on the training data, but it does not generalize well. Complex models such as deep neural networks can detect subtle patterns in the data, but if the training set is noisy, or if it is too small, which introduces sampling noise, then the model is likely to detect patterns in the noise itself. Obviously these patterns will not generalize to new instances."
+      },
+      {
+        "chunk_index": 34,
+        "chunk": "Regularization forced the model to have a smaller slope: this model does not fit the training data as well as the first model, but it actually generalizes better to new examples that it did not see during training. The amount of regularization to apply during learning can be controlled by a hyperparameter."
+      }
+    ],
+    "chunk_indices": [33, 34]
+  },
+
+  {
+    "id": 7,
+    "query": "What is the difference between hard and soft voting in an ensemble classifier?",
+    "ideal_context": [
+      {
+        "chunk_index": 222,
+        "chunk": "A very simple way to create an even better classifier is to aggregate the predictions of each classifier: the class that gets the most votes is the ensemble’s prediction. This majority-vote classifier is called a hard voting classifier."
+      },
+      {
+        "chunk_index": 223,
+        "chunk": "If all classifiers can estimate class probabilities (i.e., they have a predict_proba() method), the ensemble can average the predicted probabilities for each class across all classifiers. The class with the highest average probability is then selected as the ensemble’s prediction. Soft voting often achieves higher performance than hard voting because it gives more weight to confident predictions made by the individual classifiers."
+      }
+    ],
+    "chunk_indices": [222, 223]
+  },
+  {
+    "id": 8,
+    "query": "Why can predictors in a bagging ensemble be trained in parallel?",
+    "ideal_context": [
+      {
+        "chunk_index": 226,
+        "chunk": "Bagging and pasting involve training several predictors on different random samples of the training set. Once all predictors are trained, the ensemble can make a prediction for a new instance by simply aggregating the predictions of all predictors. As you can see in Figure 7-4, predictors can all be trained in parallel, via different CPU cores or even different servers. Similarly, predictions can be made in parallel. This is one of the reasons bagging and pasting are such popular methods: they scale very well."
+      }
+    ],
+    "chunk_indices": [226]
+  },
+
+  {
+    "id": 9,
+    "query": "Why does bagging generally reduce variance compared with a single predictor?",
+    "ideal_context": [
+      {
+        "chunk_index": 227,
+        "chunk": "Bagging introduces a bit more diversity in the subsets that each predictor is trained on, so bagging ends up with a slightly higher bias than pasting; but the extra diversity also means that the predictors end up being less correlated, so the ensemble’s variance is reduced. Overall, bagging often results in better models, which explains why it’s generally preferred."
+      }
+    ],
+    "chunk_indices": [227]
+  },
+
+  {
+    "id": 10,
+    "query": "Why can't AdaBoost predictors be trained in parallel?",
+    "ideal_context": [
+      {
+        "chunk_index": 227,
+        "chunk": "There is one important drawback to this sequential learning technique: training cannot be parallelized since each predictor can only be trained after the previous predictor has been trained and evaluated. As a result, it does not scale as well as bagging or pasting."
+      }
+    ],
+    "chunk_indices": [227]
+  },
+
+  {
+    "id": 11,
+    "query": "How does gradient boosting improve its predictions as additional trees are added?",
+    "ideal_context": [
+      {
+        "chunk_index": 238,
+        "chunk": "Next, we’ll train a second DecisionTreeRegressor on the residual errors made by the first predictor. And then we’ll train a third regressor on the residual errors made by the second predictor. Now we have an ensemble containing three trees. It can make predictions on a new instance simply by adding up the predictions of all the trees. In the second row, a new tree is trained on the residual errors of the first tree. In the third row another tree is trained on the residual errors of the second tree. You can see that the ensemble’s predictions gradually get better as trees are added to the ensemble."
+      }
+    ],
+    "chunk_indices": [238]
+  },
+
+  {
+    "id": 12,
+    "query": "What is the purpose of early stopping in GradientBoostingRegressor?",
+    "ideal_context": [
+      {
+        "chunk_index": 241,
+        "chunk": "If you set the n_iter_no_change hyperparameter to an integer value, say 10, then the GradientBoostingRegressor will automatically stop adding more trees during training if it sees that the last 10 trees didn’t help. This is simply early stopping. If you set n_iter_no_change too low, training may stop too early and the model will underfit. But if you set it too high, it will overfit instead."
+      }
+    ],
+    "chunk_indices": [241]
+  },
+
+  {
+    "id": 13,
+    "query": "How does a Gaussian mixture model perform soft clustering?",
+    "ideal_context": [
+      {
+        "chunk_index": 302,
+        "chunk": "Unlike k-means, though, EM uses soft cluster assignments, not hard assignments. For each instance, during the expectation step, the algorithm estimates the probability that it belongs to each cluster based on the current cluster parameters. Then, during the maximization step, each cluster is updated using all the instances in the dataset, with each instance weighted by the estimated probability that it belongs to that cluster. These probabilities are called the responsibilities of the clusters for the instances."
+      },
+      {
+        "chunk_index": 303,
+        "chunk": "The model can easily assign each instance to the most likely cluster (hard clustering) or estimate the probability that it belongs to a particular cluster (soft clustering). Just use the predict() method for hard clustering, or the predict_proba() method for soft clustering."
+      }
+    ],
+    "chunk_indices": [302, 303]
+  },
+
+  {
+    "id": 14,
+    "query": "What are the main problems with hard margin SVM classification?",
+    "ideal_context": [
+      {
+        "chunk_index": 194,
+        "chunk": "If we strictly impose that all instances must be off the street and on the correct side, this is called hard margin classification. There are two main issues with hard margin classification. First, it only works if the data is linearly separable. Second, it is sensitive to outliers."
+      },
+      {
+        "chunk_index": 195,
+        "chunk": "To avoid these issues, we need to use a more flexible model. The objective is to find a good balance between keeping the street as large as possible and limiting the margin violations. This is called soft margin classification. When creating an SVM model using Scikit-Learn, you can specify the regularization hyperparameter C."
+      }
+    ],
+    "chunk_indices": [194, 195]
+  },
+
+  {
+    "id": 15,
+    "query": "How does the C hyperparameter affect the trade-off between margin size and margin violations in a soft-margin SVM?",
+    "ideal_context": [
+      {
+        "chunk_index": 195,
+        "chunk": "With a low value of C, you end up with the model on the left of Figure 5-4. With a high value, you get the model on the right. Reducing C makes the street larger, but it also leads to more margin violations. In other words, reducing C results in more instances supporting the street, so there’s less risk of overfitting. But if you reduce it too much, then the model ends up underfitting. If your SVM model is overfitting, you can try regularizing it by reducing C."
+      },
+      {
+        "chunk_index": 205,
+        "chunk": "To get the soft margin objective, we need to introduce a slack variable ζ ≥ 0 for each instance: ζ measures how much the instance is allowed to violate the margin. We now have two conflicting objectives: make the slack variables as small as possible to reduce the margin violations, and make ½ w w as small as possible to increase the margin. This is where the C hyperparameter comes in: it allows us to define the trade-off between these two objectives."
+      }
+    ],
+    "chunk_indices": [195, 205]
+  }
+]

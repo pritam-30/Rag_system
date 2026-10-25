@@ -1,0 +1,122 @@
+[
+  {
+    "question_id": 1,
+    "query": "What are the main situations where machine learning is preferable to a traditional rule-based approach?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 2,
+    "query": "Why can machine learning be useful when dealing with a fluctuating environment?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 3,
+    "query": "What is the difference between instance-based learning and model-based learning?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 4,
+    "query": "Why is representative training data important for machine learning models?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 5,
+    "query": "What problems can poor-quality training data cause, and how can it be addressed?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 6,
+    "query": "What is overfitting, and why can complex models overfit noisy or small datasets?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 7,
+    "query": "What is the difference between hard and soft voting in an ensemble classifier?",
+    "scores": {
+      "Answer Relevancy": 0.75,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 8,
+    "query": "Why can predictors in a bagging ensemble be trained in parallel?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 9,
+    "query": "Why does bagging generally reduce variance compared with a single predictor?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 10,
+    "query": "Why can't AdaBoost predictors be trained in parallel?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 11,
+    "query": "How does gradient boosting improve its predictions as additional trees are added?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 12,
+    "query": "What is the purpose of early stopping in GradientBoostingRegressor?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 13,
+    "query": "How does a Gaussian mixture model perform soft clustering?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 14,
+    "query": "What are the main problems with hard margin SVM classification?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  },
+  {
+    "question_id": 15,
+    "query": "How does the C hyperparameter affect the trade-off between margin size and margin violations in a soft-margin SVM?",
+    "scores": {
+      "Answer Relevancy": 1.0,
+      "Faithfulness": 1.0
+    }
+  }
+]

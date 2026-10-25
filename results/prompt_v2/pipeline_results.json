@@ -1,0 +1,202 @@
+[
+    {
+        "question_id": 1,
+        "query": "Why can machine learning automatically adapt when the patterns in spam change?",
+        "scores": {
+            "Answer Relevancy": 1.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 1.0,
+            "Completeness [GEval]": 1.0
+        }
+    },
+    {
+        "question_id": 2,
+        "query": "How does online learning differ from batch learning when new data arrives?",
+        "scores": {
+            "Answer Relevancy": 1.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 1.0,
+            "Completeness [GEval]": 1.0
+        }
+    },
+    {
+        "question_id": 3,
+        "query": "What is the role of the learning rate in an online learning system?",
+        "scores": {
+            "Answer Relevancy": 1.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 1.0,
+            "Completeness [GEval]": 1.0
+        }
+    },
+    {
+        "question_id": 4,
+        "query": "Why is a large amount of training data not necessarily enough to guarantee good generalization?",
+        "scores": {
+            "Answer Relevancy": 0.0,
+            "Faithfulness": 0.0,
+            "Correctness [GEval]": 0.0,
+            "Completeness [GEval]": 0.0
+        }
+    },
+    {
+        "question_id": 5,
+        "query": "What is feature engineering, and what are its three main activities described by G\u00e9ron?",
+        "scores": {
+            "Answer Relevancy": 1.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 1.0,
+            "Completeness [GEval]": 1.0
+        }
+    },
+    {
+        "question_id": 6,
+        "query": "How does regularization affect the risk of overfitting?",
+        "scores": {
+            "Answer Relevancy": 1.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 0.8,
+            "Completeness [GEval]": 0.6
+        }
+    },
+    {
+        "question_id": 7,
+        "query": "Why should the test set be kept separate from the process of choosing a model and tuning its hyperparameters?",
+        "scores": {
+            "Answer Relevancy": 1.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 0.8,
+            "Completeness [GEval]": 0.7
+        }
+    },
+    {
+        "question_id": 8,
+        "query": "Why must validation and test data be representative of production data when there is a data mismatch?",
+        "scores": {
+            "Answer Relevancy": 0.6666666666666666,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 1.0,
+            "Completeness [GEval]": 1.0
+        }
+    },
+    {
+        "question_id": 9,
+        "query": "Why are SVMs sensitive to the scale of their input features?",
+        "scores": {
+            "Answer Relevancy": 0.4,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 1.0,
+            "Completeness [GEval]": 1.0
+        }
+    },
+    {
+        "question_id": 10,
+        "query": "What are the two main problems with hard-margin SVM classification, and how does soft-margin classification address them?",
+        "scores": {
+            "Answer Relevancy": 1.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 0.8,
+            "Completeness [GEval]": 0.8
+        }
+    },
+    {
+        "question_id": 11,
+        "query": "Why does reducing C in a soft-margin SVM make the street larger?",
+        "scores": {
+            "Answer Relevancy": 1.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 0.3,
+            "Completeness [GEval]": 0.2
+        }
+    },
+    {
+        "question_id": 12,
+        "query": "How does hard voting combine the predictions of multiple classifiers?",
+        "scores": {
+            "Answer Relevancy": 1.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 1.0,
+            "Completeness [GEval]": 1.0
+        }
+    },
+    {
+        "question_id": 13,
+        "query": "Why can soft voting give more influence to confident classifiers than hard voting?",
+        "scores": {
+            "Answer Relevancy": 0.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 0.0,
+            "Completeness [GEval]": 0.0
+        }
+    },
+    {
+        "question_id": 14,
+        "query": "Why does training predictors on different subsets help a bagging ensemble?",
+        "scores": {
+            "Answer Relevancy": 1.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 0.9,
+            "Completeness [GEval]": 1.0
+        }
+    },
+    {
+        "question_id": 15,
+        "query": "What is the difference between random patches and random subspaces?",
+        "scores": {
+            "Answer Relevancy": 0.25,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 0.7,
+            "Completeness [GEval]": 0.7
+        }
+    },
+    {
+        "question_id": 16,
+        "query": "Why does GradientBoostingRegressor train successive trees on residual errors?",
+        "scores": {
+            "Answer Relevancy": 1.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 1.0,
+            "Completeness [GEval]": 0.7
+        }
+    },
+    {
+        "question_id": 17,
+        "query": "What happens if the learning rate in gradient boosting is made smaller?",
+        "scores": {
+            "Answer Relevancy": 1.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 0.8,
+            "Completeness [GEval]": 0.7
+        }
+    },
+    {
+        "question_id": 19,
+        "query": "How does a Gaussian mixture model use responsibilities during EM?",
+        "scores": {
+            "Answer Relevancy": 0.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 0.0,
+            "Completeness [GEval]": 0.0
+        }
+    },
+    {
+        "question_id": 20,
+        "query": "Why does scaled dot-product attention divide the query-key similarity scores by the square root of the key dimension?",
+        "scores": {
+            "Answer Relevancy": 0.75,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 1.0,
+            "Completeness [GEval]": 1.0
+        }
+    },
+    {
+        "question_id": 18,
+        "query": "How does PCA determine how many dimensions should be retained when preserving a target amount of variance?",
+        "scores": {
+            "Answer Relevancy": 1.0,
+            "Faithfulness": 1.0,
+            "Correctness [GEval]": 1.0,
+            "Completeness [GEval]": 1.0
+        }
+    }
+]

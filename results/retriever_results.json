@@ -1,0 +1,265 @@
+{
+  "evaluation": {
+    "total_questions": 20,
+    "reranker": false,
+    "metrics": {
+      "contextual_precision": {
+        "average": 0.7365,
+        "threshold": 0.7,
+        "passed": 15,
+        "failed": 5,
+        "pass_rate": 0.75
+      },
+      "contextual_recall": {
+        "average": 0.8585,
+        "threshold": 0.7,
+        "passed": 15,
+        "failed": 5,
+        "pass_rate": 0.75
+      }
+    },
+    "per_question": [
+      {
+        "question": 1,
+        "contextual_precision": 0.75,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 2,
+        "contextual_precision": 0.81,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 3,
+        "contextual_precision": 0.7,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 4,
+        "contextual_precision": 0.0,
+        "contextual_recall": 0.0
+      },
+      {
+        "question": 5,
+        "contextual_precision": 0.2,
+        "contextual_recall": 0.5
+      },
+      {
+        "question": 6,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 7,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 8,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 9,
+        "contextual_precision": 0.7,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 10,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 11,
+        "contextual_precision": 0.83,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 12,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 13,
+        "contextual_precision": 0.33,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 14,
+        "contextual_precision": 0.58,
+        "contextual_recall": 0.67
+      },
+      {
+        "question": 15,
+        "contextual_precision": 0.0,
+        "contextual_recall": 0.33
+      },
+      {
+        "question": 16,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 17,
+        "contextual_precision": 1.0,
+        "contextual_recall": 0.67
+      },
+      {
+        "question": 18,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 19,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 20,
+        "contextual_precision": 0.83,
+        "contextual_recall": 1.0
+      }
+    ]
+  }
+}
+
+{
+  "evaluation": {
+    "total_questions": 20,
+    "reranker": true,
+    "metrics": {
+      "contextual_precision": {
+        "average": 0.7755,
+        "threshold": 0.7,
+        "passed": 16,
+        "failed": 4,
+        "pass_rate": 0.8
+      },
+      "contextual_recall": {
+        "average": 0.8165,
+        "threshold": 0.7,
+        "passed": 15,
+        "failed": 5,
+        "pass_rate": 0.75
+      }
+    },
+    "per_question": [
+      {
+        "question": 1,
+        "contextual_precision": 0.83,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 2,
+        "contextual_precision": 0.92,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 3,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 4,
+        "contextual_precision": 0.0,
+        "contextual_recall": 0.0
+      },
+      {
+        "question": 5,
+        "contextual_precision": 0.25,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 6,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 7,
+        "contextual_precision": 0.7,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 8,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 9,
+        "contextual_precision": 0.7,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 10,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 11,
+        "contextual_precision": 0.83,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 12,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 13,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 14,
+        "contextual_precision": 1.0,
+        "contextual_recall": 0.33
+      },
+      {
+        "question": 15,
+        "contextual_precision": 0.0,
+        "contextual_recall": 0.0
+      },
+      {
+        "question": 16,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 17,
+        "contextual_precision": 1.0,
+        "contextual_recall": 0.67
+      },
+      {
+        "question": 18,
+        "contextual_precision": 1.0,
+        "contextual_recall": 1.0
+      },
+      {
+        "question": 19,
+        "contextual_precision": 0.7,
+        "contextual_recall": 0.33
+      },
+      {
+        "question": 20,
+        "contextual_precision": 0.58,
+        "contextual_recall": 1.0
+      }
+    ]
+  }
+}
+
+
+"comparison_with_no_reranker": {
+      "contextual_precision": {
+        "without_reranker": 0.7365,
+        "with_reranker": 0.7755,
+        "absolute_change": 0.039,
+        "relative_change_percent": 5.3
+      },
+      "contextual_recall": {
+        "without_reranker": 0.8585,
+        "with_reranker": 0.8165,
+        "absolute_change": -0.042,
+        "relative_change_percent": -4.89
+      }
+    }

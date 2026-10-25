@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "query": "Why can machine learning automatically adapt when the patterns in spam change?",
+    "relevant_chunk_indices": [2, 3, 4],
+    "reference_answer": "A machine learning spam filter learns which words and phrases are associated with spam from examples. If spammers change their wording, the system can detect that the new patterns have become frequent in spam and start flagging them without requiring someone to manually write new rules."
+  },
+  {
+    "id": 2,
+    "query": "How does online learning differ from batch learning when new data arrives?",
+    "relevant_chunk_indices": [19, 20, 21],
+    "reference_answer": "Batch learning cannot learn incrementally and must be trained using all available data, while online learning trains incrementally by feeding the system individual instances or small mini-batches. Online learning can therefore learn about new data as it arrives."
+  },
+  {
+    "id": 3,
+    "query": "What is the role of the learning rate in an online learning system?",
+    "relevant_chunk_indices": [22],
+    "reference_answer": "The learning rate controls how quickly an online learning system adapts to changing data. A high learning rate makes the system adapt rapidly but also makes it forget old data quickly. A low learning rate gives the system more inertia, so it learns more slowly but is less sensitive to noise or nonrepresentative new data."
+  },
+  {
+    "id": 4,
+    "query": "Why is a large amount of training data not necessarily enough to guarantee good generalization?",
+    "relevant_chunk_indices": [29, 30, 31],
+    "reference_answer": "The training data must be representative of the cases the model needs to generalize to. Even a very large dataset can be nonrepresentative if its sampling method is flawed, which is called sampling bias."
+  },
+  {
+    "id": 5,
+    "query": "What is feature engineering, and what are its three main activities described by Géron?",
+    "relevant_chunk_indices": [32],
+    "reference_answer": "Feature engineering is the process of coming up with a good set of features for a machine learning project. It involves feature selection, feature extraction, and creating new features by gathering new data."
+  },
+  {
+    "id": 6,
+    "query": "How does regularization affect the risk of overfitting?",
+    "relevant_chunk_indices": [33, 34],
+    "reference_answer": "Regularization constrains the model so that it does not fit the training data as closely. This can reduce the risk of overfitting and improve generalization. The amount of regularization is controlled by a hyperparameter."
+  },
+  {
+    "id": 7,
+    "query": "Why should the test set be kept separate from the process of choosing a model and tuning its hyperparameters?",
+    "relevant_chunk_indices": [36, 37],
+    "reference_answer": "Repeatedly evaluating models on the test set and adapting the model or hyperparameters based on those results causes the model to become adapted to that particular test set. The resulting estimate of generalization error is then overly optimistic. A validation set can instead be used for model selection and hyperparameter tuning, with the test set used only for the final evaluation."
+  },
+  {
+    "id": 8,
+    "query": "Why must validation and test data be representative of production data when there is a data mismatch?",
+    "relevant_chunk_indices": [38, 39],
+    "reference_answer": "The validation and test sets should be as representative as possible of the data expected in production. Otherwise, poor performance could be caused by a mismatch between the training data and production data rather than by overfitting, making it difficult to identify the real problem."
+  },
+  {
+    "id": 9,
+    "query": "Why are SVMs sensitive to the scale of their input features?",
+    "relevant_chunk_indices": [194],
+    "reference_answer": "SVMs are sensitive to feature scales because the scale of the features affects the geometry of the widest possible street between the classes. Géron shows that after feature scaling, the SVM decision boundary can look much better."
+  },
+  {
+    "id": 10,
+    "query": "What are the two main problems with hard-margin SVM classification, and how does soft-margin classification address them?",
+    "relevant_chunk_indices": [194, 195],
+    "reference_answer": "Hard-margin classification only works when the data is linearly separable and is sensitive to outliers. Soft-margin classification provides a more flexible approach by balancing a large margin against margin violations. The regularization hyperparameter C controls this trade-off."
+  },
+  {
+    "id": 11,
+    "query": "Why does reducing C in a soft-margin SVM make the street larger?",
+    "relevant_chunk_indices": [195],
+    "reference_answer": "Reducing C allows more margin violations in exchange for a larger street. This means more instances can support the street and there is less risk of overfitting, although reducing C too much can cause underfitting."
+  },
+  {
+    "id": 12,
+    "query": "How does hard voting combine the predictions of multiple classifiers?",
+    "relevant_chunk_indices": [222],
+    "reference_answer": "Hard voting aggregates the predictions of the individual classifiers and selects the class that receives the most votes."
+  },
+  {
+    "id": 13,
+    "query": "Why can soft voting give more influence to confident classifiers than hard voting?",
+    "relevant_chunk_indices": [223],
+    "reference_answer": "Soft voting averages the predicted probabilities for each class across the classifiers and selects the class with the highest average probability. This gives more weight to confident predictions made by the individual classifiers."
+  },
+  {
+    "id": 14,
+    "query": "Why does training predictors on different subsets help a bagging ensemble?",
+    "relevant_chunk_indices": [226, 227],
+    "reference_answer": "Training predictors on different random subsets introduces diversity. In bagging, the additional diversity makes the predictors less correlated, which reduces the ensemble's variance when their predictions are aggregated."
+  },
+  {
+    "id": 15,
+    "query": "What is the difference between random patches and random subspaces?",
+    "relevant_chunk_indices": [229],
+    "reference_answer": "Random patches samples both training instances and input features. Random subspaces keeps all training instances but samples features. Sampling features creates additional predictor diversity and trades some bias for lower variance."
+  },
+  {
+    "id": 16,
+    "query": "Why does GradientBoostingRegressor train successive trees on residual errors?",
+    "relevant_chunk_indices": [238, 239],
+    "reference_answer": "Each new tree is trained on the residual errors made by the previous predictor. Its predictions are then added to the existing ensemble, so the ensemble's predictions gradually improve as additional trees are added."
+  },
+  {
+    "id": 17,
+    "query": "What happens if the learning rate in gradient boosting is made smaller?",
+    "relevant_chunk_indices": [239],
+    "reference_answer": "The learning rate scales the contribution of each tree. With a lower learning rate, more trees are needed to fit the training set, but the predictions will usually generalize better. Géron describes this as shrinkage, a regularization technique."
+  },
+  {
+    "id": 18,
+    "query": "How does PCA determine how many dimensions should be retained when preserving a target amount of variance?",
+    "relevant_chunk_indices": [260, 261, 262],
+    "reference_answer": "The explained variance ratio indicates the proportion of the dataset's variance lying along each principal component. The number of dimensions can be chosen so that the cumulative explained variance reaches a sufficiently large target, such as 95%. Géron also describes setting n_components to a float between 0 and 1 to specify the proportion of variance to preserve."
+  },
+  {
+    "id": 19,
+    "query": "How does a Gaussian mixture model use responsibilities during EM?",
+    "relevant_chunk_indices": [302, 303],
+    "reference_answer": "During the expectation step, the Gaussian mixture model estimates the probability that each instance belongs to each cluster. These probabilities are called the responsibilities. During the maximization step, each cluster is updated using all instances, with each instance weighted by its estimated responsibility for that cluster."
+  },
+  {
+    "id": 20,
+    "query": "Why does scaled dot-product attention divide the query-key similarity scores by the square root of the key dimension?",
+    "relevant_chunk_indices": [756, 757],
+    "reference_answer": "The similarity scores are divided by the square root of the key dimension to scale them down and avoid saturating the softmax function, which would otherwise lead to tiny gradients."
+  }
+]

@@ -33,8 +33,6 @@ temporary.py
 app.py
 export_chunks.py
 all_chunks.json
-test_cases/
-results/
 # Large PDFs and datasets - keep data separate
 data/
 *.pdf
